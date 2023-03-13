@@ -27,3 +27,19 @@
 window SET KEY=VALUE
 mac   export KEY=VALUE
 
+
+## 代码分割的规则
+1. 每个入口是一个chunk
+   page1
+   page2
+   page3
+2.动态import会分割代码块
+   asyncModule1
+3.代码分割splitChunkPlugin
+
+vendors-node_modules__lodash_4_17_20_lodash_lodash_js.js lodash
+vendors-node_modules__jquery_3_5_1_jquery_dist_jquery_js.js jquery
+page1.js page1.js module1.js module2.js
+page2.js page2.js module1.js module2.js
+page3.js page3.js module1.js module3.js
+asyncModule1.js asyncModule1.js
