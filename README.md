@@ -1,8 +1,8 @@
-## 1.课程安排
+## Webpack5性能优化与原理
 
-第一次:webpack优化配置和实战
+1.webpack优化配置和实战
  
-第二次:webpack原理 tree-shaking 
+2.webpack原理 tree-shaking 
  
 
 ### 1.配置与实战
